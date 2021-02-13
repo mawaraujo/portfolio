@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'variables';
+
+.primary-button {
+    transition: .1s linear;
+    @apply border-2 hover:bg-blue-500 outline-none focus:outline-none border-blue-500 text-blue-500 hover:text-white px-3 py-2 sm:text-xl  block rounded-lg;
+}
+
+.light {
+    .title { @apply sm:text-8xl text-4xl; }
+    .description { @apply sm:text-3xl text-xl text-gray-400; }
+
+    .nav-link { @apply text-gray-500 hover:text-gray-800; }
+    .nav-link-active { @apply text-gray-800; }
+}
+
+.dark {
+    background-color: $body-dark-color;
+    .title { @apply sm:text-8xl text-4xl text-white; }
+    .description { @apply sm:text-3xl text-xl text-gray-400; }
+
+    .nav-link { @apply text-gray-500 hover:text-white; }
+    .nav-link-active { @apply text-white; }
+}
