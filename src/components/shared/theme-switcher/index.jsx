@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import useTheme from '../../../hooks/useThemeService.js';
 
 function LightRender() {
@@ -13,7 +14,10 @@ function NightRender() {
 }
 
 function ThemeSwitcher() {
-    const [ theme, updateTheme ] = useTheme();
+    const [ theme, updateTheme, initializeService ] = useTheme();
+
+    // eslint-disable-next-line
+    useEffect(() => initializeService(), []);
 
     return(
         <button

@@ -1,15 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ThemeService from '../core/utils/theme-service';
 
 function useThemeService() {
     const ThemeHandler = new ThemeService();
     const [ theme, setTheme ] = useState(window.localStorage.theme);
 
-    // eslint-disable-next-line
-    useEffect(() => ThemeHandler.initialize(), []);
-
+    const initializeService = () => ThemeHandler.initialize();
     const updateTheme = () => setTheme(ThemeHandler.toggleTheme());
-    return [ theme, updateTheme ];
+
+    return [ 
+        theme, 
+        updateTheme,
+        initializeService 
+    ];
 };
 
 export default useThemeService;
