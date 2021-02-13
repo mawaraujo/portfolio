@@ -3,13 +3,13 @@ import ThemeService from '../core/utils/theme-service';
 
 function useThemeService() {
     const ThemeHandler = new ThemeService();
-    const [ theme, setTheme ] = useState(window.localStorage.theme);
+    const [ currentTheme, setCurrentTheme ] = useState(window.localStorage.theme);
 
     const initializeThemeService = () => ThemeHandler.initialize();
-    const updateTheme = () => setTheme(ThemeHandler.toggleTheme());
+    const updateTheme = () => setCurrentTheme(ThemeHandler.toggleTheme());
 
     return [ 
-        theme, 
+        currentTheme, 
         updateTheme,
         initializeThemeService 
     ];

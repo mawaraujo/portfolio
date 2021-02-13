@@ -14,7 +14,7 @@ function NightRender() {
 }
 
 function ThemeSwitcher() {
-    const [ theme, updateTheme, initializeThemeService ] = useTheme();
+    const [ currentTheme, updateTheme, initializeThemeService ] = useTheme();
 
     // eslint-disable-next-line
     useEffect(() => initializeThemeService(), []);
@@ -22,11 +22,11 @@ function ThemeSwitcher() {
     return(
         <button
             className={
-            `${theme === 'light' ? 'bg-gray-200 hover:bg-gray-300' : 'bg-gray-800 hover:bg-gray-900'} 
+            `${currentTheme === 'light' ? 'bg-gray-200 hover:bg-gray-300' : 'bg-gray-800 hover:bg-gray-900'} 
             absolute bottom-6 right-6 rounded-full text-white p-3 focus:outline-none outline-none`}
             onClick={updateTheme}>
 
-            { theme === 'light' ? <NightRender /> : <LightRender/> }
+            { currentTheme === 'light' ? <NightRender /> : <LightRender/> }
         </button>
     );
 }
