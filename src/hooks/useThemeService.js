@@ -5,13 +5,13 @@ function useThemeService() {
     const ThemeHandler = new ThemeService();
     const [ theme, setTheme ] = useState(window.localStorage.theme);
 
-    const initializeService = () => ThemeHandler.initialize();
+    const initializeThemeService = () => ThemeHandler.initialize();
     const updateTheme = () => setTheme(ThemeHandler.toggleTheme());
 
     return [ 
         theme, 
         updateTheme,
-        initializeService 
+        initializeThemeService 
     ];
 };
 

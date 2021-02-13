@@ -14,10 +14,10 @@ function NightRender() {
 }
 
 function ThemeSwitcher() {
-    const [ theme, updateTheme, initializeService ] = useTheme();
+    const [ theme, updateTheme, initializeThemeService ] = useTheme();
 
     // eslint-disable-next-line
-    useEffect(() => initializeService(), []);
+    useEffect(() => initializeThemeService(), []);
 
     return(
         <button
