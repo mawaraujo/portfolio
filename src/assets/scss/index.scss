@@ -26,6 +26,8 @@
     background-image: linear-gradient(to right, #2782F1, #62a4f5);
 }
 
+.dark-color { background: $body-dark-color; }
+
 .light {
     background-color: $body-light-color;
     .bg-dynamic { @apply bg-white; }

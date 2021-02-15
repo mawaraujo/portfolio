@@ -14,5 +14,13 @@
         "url": "",
         "work": "Fullstack developer",
         "image": "https://res.cloudinary.com/maw/image/upload/v1613410293/logo_ocikfc.png"
+    },
+    {
+        "id": 2,
+        "name": "AilynMS",
+        "description": "Lorem ipsum dolor it no se que mas añadir a este texto para que ocupe más longitud.",
+        "url": "",
+        "work": "Frontend Developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1608734407/app.ailynms.pukara.es_auth_login_z5fgds.png"
     }
 ]

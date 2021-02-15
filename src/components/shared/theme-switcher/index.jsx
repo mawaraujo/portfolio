@@ -22,7 +22,7 @@ function ThemeSwitcher() {
     return(
         <button
             className={
-            `${currentTheme === 'light' ? 'bg-gray-200 hover:bg-gray-300' : 'bg-gray-800 hover:bg-gray-900'} 
+            `${currentTheme === 'light' ? 'bg-gray-200 hover:bg-gray-300' : 'bg-gray-900 hover:bg-gray-800'} 
             fixed bottom-6 right-6 rounded-full text-white p-3 focus:outline-none outline-none`}
             onClick={updateTheme}>
 
