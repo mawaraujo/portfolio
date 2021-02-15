@@ -23,7 +23,7 @@ function ThemeSwitcher() {
         <button
             className={
             `${currentTheme === 'light' ? 'bg-gray-200 hover:bg-gray-300' : 'bg-gray-800 hover:bg-gray-900'} 
-            absolute bottom-6 right-6 rounded-full text-white p-3 focus:outline-none outline-none`}
+            fixed bottom-6 right-6 rounded-full text-white p-3 focus:outline-none outline-none`}
             onClick={updateTheme}>
 
             { currentTheme === 'light' ? <NightRender /> : <LightRender/> }

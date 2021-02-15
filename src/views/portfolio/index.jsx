@@ -1,6 +1,8 @@
 import MainTemplate from '../../layouts/main.jsx';
 import Presentation from '../../components/home/presentation/index.jsx';
-import NextPage from '../../components/shared/next-page/index.jsx';
+// import NextPage from '../../components/shared/next-page/index.jsx';
+import Grid from '../../components/portfolio/grid/index.jsx';
+import Database from '../../core/lowdb/database.json';
 
 function Home() {
     return(
@@ -10,7 +12,9 @@ function Home() {
                     presentationTitle="Portfolio"
                     presentationDescription="En este apartado podrás visualizar todos mis trabajos realizados" />
 
-                <NextPage title="Siguiente pagina" link="/" />
+                <Grid data={Database} />
+
+                {/* <NextPage title="Siguiente pagina" link="/" /> */}
             </div>
         </MainTemplate>
     );

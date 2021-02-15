@@ -9,19 +9,36 @@
     @apply border-2 hover:bg-blue-500 outline-none focus:outline-none border-blue-500 text-blue-500 hover:text-white px-3 py-2 sm:text-xl  block rounded-lg;
 }
 
-.light {
-    .title { @apply sm:text-8xl text-4xl; }
-    .description { @apply sm:text-3xl text-xl text-gray-400; }
+.card-max-height-image {
+    max-height: 400px;
+    min-height: 400px;
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
 
+.title { @apply sm:text-8xl text-5xl; }
+.title-card { @apply md:text-6xl text-5xl; }
+.description { @apply sm:text-3xl text-xl; }
+.description-small { @apply text-xl; }
+
+.primary-blur {
+    background-image: linear-gradient(to right, #2782F1, #62a4f5);
+}
+
+.light {
+    background-color: $body-light-color;
+    .bg-dynamic { @apply bg-white; }
+    .description, .description-small { @apply text-gray-400; }
     .nav-link { @apply text-gray-500 hover:text-gray-800; }
     .nav-link-active { @apply text-gray-800; }
 }
 
 .dark {
     background-color: $body-dark-color;
-    .title { @apply sm:text-8xl text-4xl text-white; }
-    .description { @apply sm:text-3xl text-xl text-gray-400; }
-
+    .title, .title-card { @apply text-white; }
+    .description, .description-small { @apply text-gray-400; }
+    .bg-dynamic { @apply bg-black; }
     .nav-link { @apply text-gray-500 hover:text-white; }
     .nav-link-active { @apply text-white; }
 }

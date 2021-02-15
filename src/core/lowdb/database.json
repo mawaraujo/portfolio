@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "name": "Notidial",
+        "description": "Lorem ipsum dolor it no se que mas añadir a este texto para que ocupe más longitud.",
+        "url": "https://notidial.com/",
+        "work": "Fullstack developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1588259470/notidial_wpizzi.png"
+    },
+    {
+        "id": 1,
+        "name": "SuraVideochat",
+        "description": "Lorem ipsum dolor it no se que mas añadir a este texto para que ocupe más longitud.",
+        "url": "",
+        "work": "Fullstack developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1613410293/logo_ocikfc.png"
+    }
+]

@@ -8,7 +8,8 @@ function Home() {
             <div className="pt-10">
                 <Presentation
                     presentationTitle="Mauro Araujo"
-                    presentationDescription="Desarrollador de aplicaciones y sitios web" />
+                    presentationDescription=""
+                    ignoreDescription={true} />
 
                 <NextPage title="Siguiente pagina" link="/portfolio" />
             </div>
