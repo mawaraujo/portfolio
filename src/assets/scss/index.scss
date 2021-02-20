@@ -31,7 +31,7 @@
 .light {
     background-color: $body-light-color;
     .bg-dynamic { @apply bg-white; }
-    .description, .description-small { @apply text-gray-400; }
+    .description, .description-small { @apply text-gray-500; }
     .nav-link { @apply text-gray-500 hover:text-gray-800; }
     .nav-link-active { @apply text-gray-800; }
 }
