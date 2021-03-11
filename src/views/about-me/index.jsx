@@ -1,11 +1,20 @@
 import MainTemplate from '../../layouts/main.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
+import SEOHandler from '../../components/shared/seo-handler/index.jsx';
 
 function Home() {
     const userName = window.localStorage.mawsitename?.slice(0, 15) || false;
 
     return(
         <MainTemplate>
+            <SEOHandler 
+                title="Acerca de mí"
+                description={{
+                    name: 'Inicio',
+                    content: 'Desarrollador de aplicaciones y sitios web'
+                }}
+            />
+
             <div className="pt-10">
                 <h1 className="title">
                     {

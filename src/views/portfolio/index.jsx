@@ -4,10 +4,19 @@ import NextPage from '../../components/shared/next-page/index.jsx';
 import BackPage from '../../components/shared/back-page/index.jsx';
 import Grid from '../../components/portfolio/grid/index.jsx';
 import Database from '../../core/lowdb/database.json';
+import SEOHandler from '../../components/shared/seo-handler/index.jsx';
 
 function Home() {
     return(
         <MainTemplate>
+            <SEOHandler 
+                title="Portfolio"
+                description={{
+                    name: 'Inicio',
+                    content: 'Desarrollador de aplicaciones y sitios web'
+                }}
+            />
+
             <div className="pt-10">
                 <BackPage title="Acerca de" link="/about-me" />
 
