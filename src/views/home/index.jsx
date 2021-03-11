@@ -1,17 +1,17 @@
+import { useHistory } from 'react-router-dom';
 import MainTemplate from '../../layouts/main.jsx';
-import Presentation from '../../components/home/presentation/index.jsx';
+import DynamicPresentation from '../../components/home/dynamicPresentation/index.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
 
 function Home() {
+    const history = useHistory();
+    if(window.localStorage.mawsitename.length) history.push('/about-me');
+
     return(
         <MainTemplate>
             <div className="pt-10">
-                <Presentation
-                    presentationTitle="Mauro Araujo"
-                    presentationDescription=""
-                    ignoreDescription={true} />
-
-                <NextPage title="Siguiente pagina" link="/portfolio" />
+                <DynamicPresentation />
+                <NextPage title="Continuar" link="/about-me" />
             </div>
         </MainTemplate>
     );
