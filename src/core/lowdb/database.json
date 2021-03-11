@@ -2,21 +2,22 @@
     {
         "id": 0,
         "name": "Notidial",
-        "description": "Notidial es un sitio web de noticias. Su contenido se basa en información acerca de las Radios de Aregentina.",
+        "description": "Notidial es un sitio web de noticias. Su contenido se basa en información acerca de las Radios de Argentina.",
         "url": "https://notidial.com/",
         "work": "Fullstack developer",
         "image": "https://res.cloudinary.com/maw/image/upload/v1588259470/notidial_wpizzi.png",
         "technologies": [
             "Vue",
-            "Laravel",
+            "Javascript",
             "SASS",
+            "Laravel",
             "MySQL"
         ]
     },
     {
         "id": 1,
         "name": "SuraVideochat",
-        "description": "SuraVideochat es una plataforma de educación online. El mismo cuenta con un sistema de capacitación en tiempo real mediente la utilización de reproducción vía streaming, chat, sistema de encuestas y más.",
+        "description": "SuraVideochat es una plataforma de educación online. La aplicación cuenta con un sistema de capacitación en tiempo real mediante la utilización de reproducción vía streaming, chat, sistema de encuestas y más.",
         "url": "https://suravideochat.com/",
         "work": "Fullstack developer",
         "image": "https://res.cloudinary.com/maw/image/upload/v1613410293/logo_ocikfc.png",

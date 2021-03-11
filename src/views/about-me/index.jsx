@@ -10,16 +10,12 @@ function Home() {
                 <h1 className="title">
                     {
                         userName && userName !== 'undefined' 
-                        ? `Hey, ${userName}!`
+                        ? `Saludos, ${userName}!`
                         : `Hey, Bienvenido!`
                     }
                 </h1>
 
-                <p className="description mt-2">
-                    Saludos desde Buenos Aires, Argentina.
-                </p>
-
-                <p className="description-small mt-10">
+                <p className="description-small mt-5">
                     Soy <span className="text-blue-500">Mauro Araujo</span>, tengo 22 años.
                 </p>
 
