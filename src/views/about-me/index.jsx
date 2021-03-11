@@ -2,22 +2,24 @@ import MainTemplate from '../../layouts/main.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
 
 function Home() {
-    const userName = window.localStorage.mawsitename.slice(0, 15);
+    const userName = window.localStorage.mawsitename?.slice(0, 15) || false;
 
     return(
         <MainTemplate>
             <div className="pt-10">
                 <h1 className="title">
-                    {`¡Hey, ${userName || 'Bienvenido'}!`}
+                    {
+                        userName && userName !== 'undefined' 
+                        ? `Hey, ${userName}!`
+                        : `Hey, Bienvenido!`
+                    }
                 </h1>
 
-                <h1 className="mt-10">AÑDIR UN BOTON QUE DIGA "CAMBIAR NOMBRE", ESO DESPLIEGA UN MODAL</h1>
-
-                <p className="description mt-10">
+                <p className="description mt-2">
                     Saludos desde Buenos Aires, Argentina.
                 </p>
 
-                <p className="description-small mt-3">
+                <p className="description-small mt-10">
                     Soy <span className="text-blue-500">Mauro Araujo</span>, tengo 22 años.
                 </p>
 

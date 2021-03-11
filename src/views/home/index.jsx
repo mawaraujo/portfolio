@@ -5,7 +5,9 @@ import NextPage from '../../components/shared/next-page/index.jsx';
 
 function Home() {
     const history = useHistory();
-    if(window.localStorage.mawsitename.length) history.push('/about-me');
+    const storageName = window.localStorage.mawsitename;
+
+    if(storageName && storageName !== 'undefined') history.push('/about-me');
 
     return(
         <MainTemplate>
