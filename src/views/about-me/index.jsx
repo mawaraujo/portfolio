@@ -1,9 +1,10 @@
 import MainTemplate from '../../layouts/main.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
 import SEOHandler from '../../components/shared/seo-handler/index.jsx';
+import { connect } from 'react-redux';
 
-function Home() {
-    const userName = window.localStorage.mawsitename?.slice(0, 15) || false;
+function AboutMe({ GET_USER }) {
+    const userName = GET_USER?.name?.slice(0, 15) || false;
 
     return(
         <MainTemplate>
@@ -38,4 +39,10 @@ function Home() {
     );
 };
 
-export default Home;
+const mapStateProps = (state, props) => {
+    return {
+        GET_USER: state.user
+    }
+}
+
+export default connect(mapStateProps, null)(AboutMe);

@@ -25,7 +25,7 @@ function Grid({ data }) {
                                 <div className="tags flex flex-wrap">{ 
                                     el.technologies.map((tech, index) => (
                                         <div 
-                                            class="inline mt-2 mr-2 font-medium px-4 rounded-lg text-white bg-gray-900" 
+                                            className="inline mt-2 mr-2 font-medium px-4 rounded-lg text-white bg-gray-900" 
                                             key={index + '__technology'}>
                                             <small className="font-bold">{ tech }</small>
                                         </div>
@@ -37,7 +37,7 @@ function Grid({ data }) {
 
                             <div className="buttons text-right">
                                 <a 
-                                    without rel="noreferrer"
+                                    rel="noreferrer"
                                     target="_blank" 
                                     href={el.url}>
                                         

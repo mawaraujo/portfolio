@@ -1,11 +1,13 @@
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 function SEOHandler({ title, description }) {
   return (
-    <Helmet>
-      { title && <title>{title} | Mauro Araujo</title> }
-      { description && <meta name={description.name} content={description.content} /> }
-    </Helmet>
+    <HelmetProvider>
+      <Helmet>
+        { title && <title>{title} | Mauro Araujo</title> }
+        { description && <meta name={description.name} content={description.content} /> }
+      </Helmet>
+    </HelmetProvider>
   )
 }
 
