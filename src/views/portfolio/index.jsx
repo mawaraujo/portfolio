@@ -18,6 +18,6 @@ function Home() {
             </div>
         </MainTemplate>
     );
-};
+};  
 
 export default Home;

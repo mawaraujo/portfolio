@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @import 'variables';
+@import '_anim';
 
 .primary-button {
     transition: .1s linear;
@@ -10,8 +11,7 @@
 }
 
 .card-max-height-image {
-    max-height: 400px;
-    min-height: 400px;
+    min-height: 100%;
     width: 100%;
     object-fit: contain;
     height: 100%;
@@ -38,7 +38,7 @@
 
 .dark {
     background-color: $body-dark-color;
-    .title, .title-card { @apply text-white; }
+    .title, .title-card, .self-title { @apply text-white; }
     .description, .description-small { @apply text-gray-400; }
     .bg-dynamic { @apply bg-black; }
     .nav-link { @apply text-gray-500 hover:text-white; }

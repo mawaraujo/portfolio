@@ -5,8 +5,12 @@ function MainTemplate({ children }) {
     return(
         <main className="container app-wrapper sm:mx-auto px-5 my-10">
             <Navigation />
+            
+            <div className="appear-anim">
+                {children && children}
+            </div>
+            
             <ThemeSwitcher />
-            {children && children}
         </main>
     );
 }
