@@ -17,7 +17,7 @@ function Home() {
 
                 <Grid data={Database} />
 
-                <NextPage title="Siguiente pagina" link="/" />
+                <NextPage title="Contacto" link="/contact" />
             </div>
         </MainTemplate>
     );

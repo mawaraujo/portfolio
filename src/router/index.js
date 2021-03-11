@@ -2,6 +2,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import HomePage from '../views/home/index.jsx';
 import Portfolio from '../views/portfolio/index.jsx';
 import AboutMe from '../views/about-me/index.jsx';
+import Contact from '../views/contact/index.jsx';
 
 function Router() {
   return (
@@ -22,6 +23,11 @@ function Router() {
             exact
             path="/about-me"
             render={() => <AboutMe />} />
+
+          <Route
+            exact
+            path="/contact"
+            render={() => <Contact />} />
 
       </Switch>
     </BrowserRouter>
