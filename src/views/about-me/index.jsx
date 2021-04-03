@@ -20,17 +20,21 @@ function AboutMe({ GET_USER }) {
                 <h1 className="title">
                     {
                         userName && userName !== 'undefined' 
-                        ? `Saludos, ${userName}!`
+                        ? `¡Saludos, ${userName}!`
                         : `Hey, Bienvenido!`
                     }
                 </h1>
 
-                <p className="description-small mt-5">
-                    Soy <span className="text-blue-500">Mauro Araujo</span>, tengo 22 años.
+                <p className="description-small mt-10">
+                    Me presento, 
                 </p>
 
-                <p className="description-small">
-                    Actualmente, me encuentro trabajando como desarrollador de <span className="text-blue-500">aplicaciones y sitios web</span>.
+                <p className="description-small mt-5">
+                    Soy <span className="text-blue-500">Mauro,</span> tengo 22 años y resido en Buenos Aires, Argentina. Me encuentro trabajando <br /> como <span className="text-blue-500">desarrollador de aplicaciones web</span> de forma remota para una startup de España.
+                </p>
+
+                <p className="description-small mt-5">
+                    Me considero un entusiasta del Frontend, pero cuento también con mucho interés en el Backend. <br /> Intento —de forma constante— <span className="text-blue-500">aprender nuevas herramientas y/o tecnologías</span> que ayude a la hora de trabajar, <br /> aporte valor agregado y mejore tanto mis actuales como futuros desarrollos. 
                 </p>
 
                 <NextPage title="Portfolio" link="/portfolio" />
