@@ -11,8 +11,7 @@ function Home() {
     
     useEffect(function() {
         if(submit) return history.push('/about-me');
-        // eslint-disable-next-line
-    }, [submit]);
+    }, [submit]); // eslint-disable-line
 
     return(
         <MainTemplate>  
@@ -25,12 +24,8 @@ function Home() {
             />
 
             <div className="pt-10">
-                <Presentation 
-                    setSubmit={setSubmit} />
-
-                <NextPage 
-                    title="Continuar" 
-                    link="/about-me" />
+                <Presentation setSubmit={setSubmit} />
+                <NextPage title="Continuar" link="/about-me" />
             </div>
         </MainTemplate>
     );

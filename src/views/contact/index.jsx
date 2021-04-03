@@ -15,7 +15,7 @@ function Contact() {
       />
 
       <BackPage title="Portfolio" link="/portfolio" />
-
+      
       <Presentation
         presentationTitle={`Contacto`}
         presentationDescription="A continuación dejaré información para que puedas comunicarte conmigo" />

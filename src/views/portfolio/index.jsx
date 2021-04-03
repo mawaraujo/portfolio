@@ -25,7 +25,6 @@ function Home() {
                     presentationDescription="En este apartado podrás visualizar todos mis trabajos realizados" />
 
                 <Grid data={Seed} />
-
                 <NextPage title="Contacto" link="/contact" />
             </div>
         </MainTemplate>
