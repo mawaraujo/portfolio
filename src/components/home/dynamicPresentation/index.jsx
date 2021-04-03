@@ -15,11 +15,11 @@ function Presentation({ SET_USER, setSubmit }) {
     return(
         <section className="w-full mt-10">
             <div className="flex flex-col">
-                <h1 className="title mb-4">
+                <h1 className="title mb-1">
                     Hola
                 </h1>
 
-                <p className="description mb-5">
+                <p className="description mb-8">
                     Me encantaría que me indicaras tu nombre
                 </p>
 
@@ -27,12 +27,18 @@ function Presentation({ SET_USER, setSubmit }) {
                     action="#" 
                     onKeyPress={e => e.key === 'Enter' && handleSubmit(e)}>
 
-                    <input 
-                        id="inputField"
-                        type="text"
-                        className="block rounded-lg max-w-md py-4 bg-transparent border description-small focus:outline-none focus:border-gray-600 border-gray-400 px-2" 
-                        placeholder="¿Como te llamas?"
-                        ref={nameRef} />
+                    <div className="form-field">
+                        <input 
+                            id="inputField"
+                            type="text"
+                            className="block rounded-lg max-w-lg py-4 bg-transparent border description-small focus:outline-none focus:border-gray-600 border-gray-400 px-5" 
+                            placeholder="¿Como te llamas?"
+                            ref={nameRef} />
+
+                        <small className="font-bold text-gray-400">
+                            O puedes omitirlo dando clic a "continuar"
+                        </small>
+                    </div>
                 </form>
             </div>
         </section>
