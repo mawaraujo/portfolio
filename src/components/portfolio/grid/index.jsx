@@ -10,7 +10,8 @@ function Grid({ data }) {
                         key={index + '__grid'}>
 
                         <div className="left-top">
-                            <img 
+                            <img
+                                loading="lazy"
                                 src={el.image} 
                                 alt={el.name}
                                 className="card-max-height-image bg-white"
