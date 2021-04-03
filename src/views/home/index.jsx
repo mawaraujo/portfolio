@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useHistory } from "react-router-dom";
 import MainTemplate from '../../layouts/main.jsx';
-import DynamicPresentation from '../../components/home/dynamicPresentation/index.jsx';
+import Presentation from '../../components/home/presentation/index.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
-import SEOComponent from '../../components/shared/seo-handler/index.jsx';
+import SEOComponent from '../../components/shared/seo-component/index.jsx';
 
 function Home() {
     const history = useHistory();
@@ -25,7 +25,7 @@ function Home() {
             />
 
             <div className="pt-10">
-                <DynamicPresentation 
+                <Presentation 
                     setSubmit={setSubmit} />
 
                 <NextPage 

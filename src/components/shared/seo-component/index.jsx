@@ -1,4 +1,5 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import PropTypes from 'prop-types';
 
 function SEOComponent({ title, description }) {
   return (
@@ -10,5 +11,10 @@ function SEOComponent({ title, description }) {
     </HelmetProvider>
   )
 }
+
+Presentation.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired
+};
 
 export default SEOComponent;

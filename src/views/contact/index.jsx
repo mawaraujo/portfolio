@@ -1,7 +1,7 @@
 import MainTemplate from '../../layouts/main.jsx';
+import SEOComponent from '../../components/shared/seo-component/index.jsx';
 import Presentation from '../../components/shared/presentation/index.jsx';
 import BackPage from '../../components/shared/back-page/index.jsx';
-import SEOComponent from '../../components/shared/seo-handler/index.jsx';
 
 function Contact() {
   return(

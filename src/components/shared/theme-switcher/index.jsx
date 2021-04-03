@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import useTheme from '../../../hooks/useThemeService.js';
+import useTheme from '../../../hooks/useTheme.js';
 
 function LightRender() {
     return <svg xmlns="http://www.w3.org/2000/svg" className="w-7 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">

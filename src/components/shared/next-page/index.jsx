@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function NextPage({ link, title }) {
     return(
@@ -22,5 +23,10 @@ function NextPage({ link, title }) {
         </Link>
     );
 }
+
+Presentation.propTypes = {
+    link: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired
+};
 
 export default NextPage;

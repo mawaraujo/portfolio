@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function Grid({ data }) {
     return(
         <section className="grid gap-y-4 mt-12">
@@ -54,5 +56,9 @@ function Grid({ data }) {
         </section>
     );
 }
+
+Presentation.propTypes = {
+    data: PropTypes.object.isRequired
+};
 
 export default Grid;
