@@ -4,14 +4,13 @@ import { SET_USER } from '../../../redux/actions/user';
 
 function Presentation({ SET_USER, setSubmit }) {
     useEffect(() => document.getElementById('inputField').focus(), []);
-
     const nameRef = createRef();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    function handleSubmit(event) {
+        event.preventDefault();
         SET_USER({ name: nameRef.current.value });
         return setSubmit(true);
-    };
+    }
 
     return(
         <section className="w-full mt-10">

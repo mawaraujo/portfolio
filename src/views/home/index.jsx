@@ -9,7 +9,7 @@ function Home() {
     const history = useHistory();
     const [submit, setSubmit] = useState(false);
     
-    useEffect(() => {
+    useEffect(function() {
         if(submit) return history.push('/about-me');
         // eslint-disable-next-line
     }, [submit]);
@@ -25,8 +25,12 @@ function Home() {
             />
 
             <div className="pt-10">
-                <DynamicPresentation setSubmit={setSubmit} />
-                <NextPage title="Continuar" link="/about-me" />
+                <DynamicPresentation 
+                    setSubmit={setSubmit} />
+
+                <NextPage 
+                    title="Continuar" 
+                    link="/about-me" />
             </div>
         </MainTemplate>
     );
