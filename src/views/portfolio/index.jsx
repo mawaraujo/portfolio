@@ -3,13 +3,13 @@ import Presentation from '../../components/shared/presentation/index.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
 import BackPage from '../../components/shared/back-page/index.jsx';
 import Grid from '../../components/portfolio/grid/index.jsx';
-import Database from '../../core/lowdb/database.json';
-import SEOHandler from '../../components/shared/seo-handler/index.jsx';
+import Seed from '../../core/seeders/seed.json';
+import SEOComponent from '../../components/shared/seo-component/index.jsx';
 
 function Home() {
     return(
         <MainTemplate>
-            <SEOHandler 
+            <SEOComponent 
                 title="Portfolio"
                 description={{
                     name: 'Inicio',
@@ -24,7 +24,7 @@ function Home() {
                     presentationTitle={`Portfolio`}
                     presentationDescription="En este apartado podrás visualizar todos mis trabajos realizados" />
 
-                <Grid data={Database} />
+                <Grid data={Seed} />
 
                 <NextPage title="Contacto" link="/contact" />
             </div>

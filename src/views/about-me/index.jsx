@@ -1,6 +1,6 @@
 import MainTemplate from '../../layouts/main.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
-import SEOHandler from '../../components/shared/seo-handler/index.jsx';
+import SEOComponent from '../../components/shared/seo-component/index.jsx';
 import { connect } from 'react-redux';
 
 function AboutMe({ GET_USER }) {
@@ -8,7 +8,7 @@ function AboutMe({ GET_USER }) {
 
     return(
         <MainTemplate>
-            <SEOHandler 
+            <SEOComponent 
                 title="Acerca de mí"
                 description={{
                     name: 'Inicio',

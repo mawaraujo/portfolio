@@ -1,6 +1,6 @@
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-function SEOHandler({ title, description }) {
+function SEOComponent({ title, description }) {
   return (
     <HelmetProvider>
       <Helmet>
@@ -11,4 +11,4 @@ function SEOHandler({ title, description }) {
   )
 }
 
-export default SEOHandler;
+export default SEOComponent;

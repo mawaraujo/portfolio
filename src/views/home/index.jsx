@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import MainTemplate from '../../layouts/main.jsx';
 import DynamicPresentation from '../../components/home/dynamicPresentation/index.jsx';
 import NextPage from '../../components/shared/next-page/index.jsx';
-import SEOHandler from '../../components/shared/seo-handler/index.jsx';
+import SEOComponent from '../../components/shared/seo-handler/index.jsx';
 
 function Home() {
     const history = useHistory();
@@ -16,7 +16,7 @@ function Home() {
 
     return(
         <MainTemplate>  
-            <SEOHandler 
+            <SEOComponent 
                 title="Bienvenido"
                 description={{
                     name: 'Inicio',
