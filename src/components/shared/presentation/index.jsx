@@ -1,8 +1,6 @@
 import PropTypes from 'prop-types';
 
-function Presentation(props) {
-    const { presentationTitle, presentationDescription, ignoreDescription } = props;
-
+function Presentation({ presentationTitle, presentationDescription, ignoreDescription }) {
     return(
         <section className="w-full mt-10">
             <h1 className="title mb-1">
