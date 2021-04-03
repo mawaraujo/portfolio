@@ -1,9 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, createRef } from 'react';
 import { connect } from 'react-redux';
 import { SET_USER } from '../../../redux/actions/user';
 
-function Presentation({ SET_USER }) {
+function Presentation({ SET_USER, setSubmit }) {
     useEffect(() => document.getElementById('inputField').focus(), []);
+
+    const nameRef = createRef();
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        SET_USER({ name: nameRef.current.value });
+        return setSubmit(true);
+    };
 
     return(
         <section className="w-full mt-10">
@@ -16,12 +24,17 @@ function Presentation({ SET_USER }) {
                     Me encantaría que me indicaras tu nombre
                 </p>
 
-                <input 
-                    id="inputField"
-                    type="text" 
-                    className="block rounded-lg max-w-md py-4 bg-transparent border description-small focus:outline-none focus:border-gray-600 border-gray-400 px-2" 
-                    placeholder="¿Como te llamas?"
-                    onChange={(e) => SET_USER({ name: e.target.value })} />
+                <form 
+                    action="#" 
+                    onKeyPress={e => e.key === 'Enter' && handleSubmit(e)}>
+
+                    <input 
+                        id="inputField"
+                        type="text"
+                        className="block rounded-lg max-w-md py-4 bg-transparent border description-small focus:outline-none focus:border-gray-600 border-gray-400 px-2" 
+                        placeholder="¿Como te llamas?"
+                        ref={nameRef} />
+                </form>
             </div>
         </section>
     );
