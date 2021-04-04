@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-function Presentation({ presentationTitle, presentationDescription, ignoreDescription }) {
+function Presentation({ presentationTitle, presentationDescription, ignoreDescription, ignoreMarginTop }) {
     return(
-        <section className="w-full mt-10">
+        <section className={`${!ignoreMarginTop && 'mt-10'} w-full`}>
             <h1 className="title mb-1">
                 { presentationTitle }
             </h1>
@@ -21,7 +21,8 @@ function Presentation({ presentationTitle, presentationDescription, ignoreDescri
 Presentation.propTypes = {
     presentationTitle: PropTypes.string.isRequired,
     presentationDescription: PropTypes.string.isRequired,
-    ignoreDescription: PropTypes.bool
+    ignoreDescription: PropTypes.bool,
+    ignoreMarginTop: PropTypes.bool
 };
 
 export default Presentation;

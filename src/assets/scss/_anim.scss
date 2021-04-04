@@ -13,3 +13,35 @@
     margin-top: 0;
   }
 }
+
+.expand-anim {
+  max-width: 400px;
+  width: 100%;
+  animation: expand-anim 2s ease
+}
+
+@keyframes expand-anim {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 100%;
+    mim-width: 100%
+  }
+}
+
+.anim-bounce-hover:hover {
+  transition: .3s ease;
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1);
+  .bounce { @apply bg-blue-500; }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+}
