@@ -45,4 +45,5 @@
     .bg-dynamic { @apply bg-black; }
     .nav-link { @apply text-gray-500 hover:text-white; }
     .nav-link-active { @apply text-white; }
+    .invert-icon { filter: invert(100%); }
 }

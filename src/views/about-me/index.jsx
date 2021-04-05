@@ -20,8 +20,8 @@ function AboutMe({ GET_USER }) {
                 <h1 className="title">
                     {
                         userName && userName !== 'undefined' 
-                        ? `¡Saludos, ${userName}!`
-                        : `Hey, Bienvenido!`
+                        ? `Saludos, ${userName}`
+                        : `Saludos, Estimado`
                     }
                 </h1>
 
