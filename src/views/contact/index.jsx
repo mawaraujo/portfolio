@@ -40,8 +40,8 @@ function Contact() {
             loading="lazy" 
             src={EmailIcon}
             width="70px"
-            className="my-0 invert-icon" 
-            alt="Portfolio Contact Illustration"/>
+            className="my-0"
+            alt="Portfolio Email Illustration"/>
         </a>
 
         <a target="__blank" className="description-link mb-10 mx-12 text-center anim-bounce-hover" href="https://linkedin.com/in/mawaraujo">
@@ -49,8 +49,8 @@ function Contact() {
             loading="lazy" 
             src={LinkedinIcon}
             width="70px"
-            className="my-0 invert-icon max-w-md" 
-            alt="Portfolio Contact Illustration"/>
+            className="my-0 max-w-md" 
+            alt="Portfolio Linkedin Illustration"/>
         </a>
 
         <a target="__blank" className="description-link mb-10 text-center anim-bounce-hover" href="https://github.com/mawaraujo">
@@ -59,7 +59,7 @@ function Contact() {
             src={GithubIcon}
             width="70px"
             className="my-0 invert-icon" 
-            alt="Portfolio Contact Illustration"/>
+            alt="Portfolio Github Illustration"/>
         </a>
       </section>
     </MainTemplate>
