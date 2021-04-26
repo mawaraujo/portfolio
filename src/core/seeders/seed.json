@@ -33,9 +33,9 @@
     },
     {
         "id": 2,
-        "name": "Unsplashify (en desarrollo)",
+        "name": "Unsplashify",
         "description": "Unsplashify es una SPA escrita en Vue 3 y Typescript que consume el API de Unsplash.",
-        "url": "https://notidial.com/",
+        "url": "https://unsplashify.netlify.app/",
         "work": "Jamstack Developer",
         "image": "https://res.cloudinary.com/maw/image/upload/v1619458347/DeepinScreenshot_select-area_20210426143200_redsbt.png",
         "technologies": [
