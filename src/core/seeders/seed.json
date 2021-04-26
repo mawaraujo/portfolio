@@ -1,25 +1,10 @@
 [
     {
         "id": 0,
-        "name": "Notidial",
-        "description": "Notidial es un sitio web de noticias. Su contenido se basa en información acerca de las Radios de Argentina.",
-        "url": "https://notidial.com/",
-        "work": "Fullstack developer",
-        "image": "https://res.cloudinary.com/maw/image/upload/v1588259470/notidial_wpizzi.png",
-        "technologies": [
-            "Vue",
-            "Javascript",
-            "SASS",
-            "Laravel",
-            "MySQL"
-        ]
-    },
-    {
-        "id": 1,
         "name": "SuraVideochat",
         "description": "SuraVideochat es una plataforma de educación online. La aplicación cuenta con un sistema de capacitación en tiempo real mediante la utilización de reproducción vía streaming, chat, sistema de encuestas y más.",
         "url": "https://suravideochat.com/",
-        "work": "Fullstack developer",
+        "work": "Fullstack Developer",
         "image": "https://res.cloudinary.com/maw/image/upload/v1613410293/logo_ocikfc.png",
         "technologies": [
             "Vue",
@@ -27,20 +12,37 @@
             "Javascript",
             "SASS",
             "Laravel",
-            "MySQL"
+            "MySQL",
+            "Pusher",
+            "Realtime"
         ]
     },
     {
-        "id": 2,
+        "id": 1,
         "name": "Scala360 Bot Builder",
         "description": "Scala360 Bot Builder es un constructor de conversaciones de bots personalizados. Las conversaciones creadas con esta herramienta se pueden integrar en  WhatsApp o Telegram.",
         "url": "https://scala360.com/",
-        "work": "Frontend developer",
-        "image": "https://res.cloudinary.com/maw/image/upload/v1619455405/screeen_scala_ebyaab.png",
+        "work": "Frontend Developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1619456102/screeen_scala_dl7xhr.jpg",
         "technologies": [
             "Vue",
             "Javascript",
             "SASS"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Notidial",
+        "description": "Notidial es un sitio web de noticias. Su contenido se basa en información acerca de las Radios de Argentina.",
+        "url": "https://notidial.com/",
+        "work": "Fullstack Developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1588259470/notidial_wpizzi.png",
+        "technologies": [
+            "Vue",
+            "Javascript",
+            "SASS",
+            "Laravel",
+            "MySQL"
         ]
     }
 ]
