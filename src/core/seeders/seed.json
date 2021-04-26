@@ -13,7 +13,7 @@
             "SASS",
             "Laravel",
             "MySQL",
-            "Pusher",
+            "Pusher JS",
             "Realtime"
         ]
     },
@@ -27,7 +27,8 @@
         "technologies": [
             "Vue",
             "Javascript",
-            "SASS"
+            "SASS",
+            "Webpack"
         ]
     },
     {
@@ -42,8 +43,7 @@
             "Javascript",
             "SASS",
             "Laravel",
-            "MySQL",
-            "Webpack"
+            "MySQL"
         ]
     }
 ]
