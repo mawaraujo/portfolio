@@ -42,7 +42,8 @@
             "Javascript",
             "SASS",
             "Laravel",
-            "MySQL"
+            "MySQL",
+            "Webpack"
         ]
     }
 ]
