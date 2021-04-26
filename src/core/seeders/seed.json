@@ -22,7 +22,7 @@
         "name": "Scala360 Bot Builder",
         "description": "Scala360 Bot Builder es un constructor de conversaciones de bots personalizados. Las conversaciones creadas con esta herramienta se pueden integrar en  WhatsApp o Telegram.",
         "url": "https://scala360.com/",
-        "work": "Frontend Developer",
+        "work": "Jamstack Developer",
         "image": "https://res.cloudinary.com/maw/image/upload/v1619456102/screeen_scala_dl7xhr.jpg",
         "technologies": [
             "Vue",
@@ -33,6 +33,21 @@
     },
     {
         "id": 2,
+        "name": "Unsplashify (en desarrollo)",
+        "description": "Unsplashify es una SPA escrita en Vue 3 y Typescript que consume el API de Unsplash.",
+        "url": "https://notidial.com/",
+        "work": "Jamstack Developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1619458347/DeepinScreenshot_select-area_20210426143200_redsbt.png",
+        "technologies": [
+            "Vue",
+            "Typescript",
+            "Javascript",
+            "SASS",
+            "Vite"
+        ]
+    },
+    {
+        "id": 3,
         "name": "Notidial",
         "description": "Notidial es un sitio web de noticias. Su contenido se basa en información acerca de las Radios de Argentina.",
         "url": "https://notidial.com/",
