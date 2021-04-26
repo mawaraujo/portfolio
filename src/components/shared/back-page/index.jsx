@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-function NextPage({ link, title }) {
+function BackPage({ link, title }) {
     return(
         <Link to={link}>
             <button className="primary-button flex mt-10">
@@ -23,9 +23,9 @@ function NextPage({ link, title }) {
     );
 }
 
-Presentation.propTypes = {
+BackPage.propTypes = {
     link: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired
 };
 
-export default NextPage; 
+export default BackPage; 

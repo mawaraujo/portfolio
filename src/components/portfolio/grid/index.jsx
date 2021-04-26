@@ -58,8 +58,8 @@ function Grid({ data }) {
     );
 }
 
-Presentation.propTypes = {
-    data: PropTypes.object.isRequired
+Grid.propTypes = {
+    data: PropTypes.array.isRequired
 };
 
 export default Grid;

@@ -42,7 +42,7 @@ function AboutMe({ GET_USER }) {
                 </p>
 
                 <p className="description-small mt-5">
-                    Le adjunto mi cv <a target="__blank" class="text-blue-500" href={Curriculum}>a través de este enlace.</a>
+                    Le adjunto mi cv <a target="__blank" className="text-blue-500" href={Curriculum}>a través de este enlace.</a>
                 </p>
 
                 <NextPage title="Portfolio" link="/portfolio" />

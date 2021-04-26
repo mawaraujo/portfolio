@@ -29,5 +29,18 @@
             "Laravel",
             "MySQL"
         ]
+    },
+    {
+        "id": 2,
+        "name": "Scala360 Bot Builder",
+        "description": "Scala360 Bot Builder es un constructor de conversaciones de bots personalizados. Las conversaciones creadas con esta herramienta se pueden integrar en  WhatsApp o Telegram.",
+        "url": "https://scala360.com/",
+        "work": "Frontend developer",
+        "image": "https://res.cloudinary.com/maw/image/upload/v1619455405/screeen_scala_ebyaab.png",
+        "technologies": [
+            "Vue",
+            "Javascript",
+            "SASS"
+        ]
     }
 ]

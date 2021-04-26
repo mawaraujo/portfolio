@@ -12,9 +12,9 @@ function SEOComponent({ title, description }) {
   )
 }
 
-Presentation.propTypes = {
+SEOComponent.propTypes = {
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired
+  description: PropTypes.any.isRequired
 };
 
 export default SEOComponent;

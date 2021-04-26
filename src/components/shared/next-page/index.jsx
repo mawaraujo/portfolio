@@ -24,7 +24,7 @@ function NextPage({ link, title }) {
     );
 }
 
-Presentation.propTypes = {
+NextPage.propTypes = {
     link: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired
 };
