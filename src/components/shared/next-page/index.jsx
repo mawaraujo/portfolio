@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function NextPage({ link, title }) {
     return(
-        <Link to={link}>
+        <Link style={{display: 'contents'}} to={link}>
             <button className="primary-button flex mt-10">
                 {title}
 

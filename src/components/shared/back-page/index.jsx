@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function BackPage({ link, title }) {
     return(
-        <Link to={link}>
+        <Link style={{display: 'contents'}} to={link}>
             <button className="primary-button flex mt-10">
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
