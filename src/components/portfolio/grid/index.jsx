@@ -46,7 +46,7 @@ function Grid({ data }) {
                                         
                                     <button 
                                         className="inline px-10 rounded-lg text-lg py-1 mt-5 font-bold text-blue-500 button border-2 border-blue-500 hover:bg-blue-500 hover:text-white focus:outline-none">
-                                        Ir al sitio
+                                        Más información
                                     </button>
                                 </a>
                             </div>
