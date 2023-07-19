@@ -1,0 +1,28 @@
+---
+import Card from "./Card.astro";
+---
+
+<Card
+  header={{
+    show: true,
+    title: 'Experiencia'
+  }}>
+  
+  <ol class="relative border-l border-gray-200 dark:border-gray-300">                  
+    <li class="mb-10 ml-4">
+      <div class="absolute w-3 h-3 bg-black dark:bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-black dark:border-white dark:bg-white"></div>
+      <time class="text-black dark:text-white">2021 — Actualidad</time>
+
+      <h3 class="text-xl font-bold mt-2 text-black dark:text-white">Swiss Medical Seguros</h3>
+      <p class="text-gray-500">React & React Native Developer Ssr</p>
+    </li>
+
+    <li class="mb-10 ml-4">
+      <div class="absolute w-3 h-3 bg-black dark:bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-black dark:border-white dark:bg-white"></div>
+      <time class="text-black dark:text-white">2020 — 2021</time>
+
+      <h3 class="text-xl font-bold mt-2 text-black dark:text-white">PukaraIT</h3>
+      <p class="text-gray-500">Fullstack Web Developer</p>
+    </li>
+  </ol>
+</Card>

@@ -1,0 +1,19 @@
+---
+import Card from "./Card.astro";
+import { getAge } from "../utils/age";
+---
+
+<Card
+  header={{
+    show: true,
+    title: 'Sobre mi',
+  }}>
+
+  <p class="mb-3 text-black dark:text-white">
+    Tengo {getAge(new Date(1998, 5, 20))} años y cuento con más de 3 años de experiencia como programador. He trabajado en diversos proyectos, tanto en el ámbito web como en el desarrollo de aplicaciones móviles.
+  </p>
+
+  <p class="text-black dark:text-white">
+    Me encuentro entusiasmado por seguir creciendo profesionalmente y enfrentar nuevos desafíos en mi carrera.
+  </p>
+</Card>
